@@ -1,0 +1,30 @@
+{
+  "name": "{{=it.templateName}}",
+  "version": "1.0.0",
+  "main": "./dist/main.js",
+  "license": "UNLICENSED",
+  "description": "Generated project - {{=it.templateName}}",
+  "scripts": {
+    "build": "npm run-script clean && npm run-script lint && tsc -p ./tsconfig.build.json",
+    "test": "jest --detectOpenHandles",
+    "lint": "tslint -c ./tslint.json -p tsconfig.json",
+    "clean": "rimraf dist",
+    "deploy": "npm run-script lint && npm run-script build && npm publish --access public"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.11.3",
+    "@types/pino": "^5.8.5",
+    "@types/supertest": "^2.0.7",
+    "supertest": "^4.0.0",
+    "jest": "^24.5.0",
+    "rimraf": "^2.6.3",
+    "ts-jest": "^24.0.0",
+    "ts-node": "^8.0.3",
+    "tslint": "^5.14.0",
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "@msiviero/knit": "^1.1.2"
+  }
+}
