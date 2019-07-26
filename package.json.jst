@@ -1,10 +1,12 @@
 {
-  "name": "{{=it.templateName}}",
+  "name": "<%= templateName %>",
   "version": "1.0.0",
   "main": "./dist/main.js",
   "license": "UNLICENSED",
-  "description": "Generated project - {{=it.templateName}}",
-  "bin": "dist/main.js",
+  "description": "Generated project - <%= templateName %>",
+  "bin": {
+    "server": "./dist/main.js"
+  },
   "pkg": {
     "targets": [
       "latest-macos-x64",
