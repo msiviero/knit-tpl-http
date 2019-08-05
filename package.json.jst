@@ -16,6 +16,7 @@
     ]
   },
   "scripts": {
+    "start": "node ./dist/main.js",
     "build": "npm run-script test && npm run-script clean && npm run-script lint && npm run-script compile",
     "compile": "tsc -p ./tsconfig.build.json",
     "pkg": "npm run-script build && pkg . --output ./bin/server",
