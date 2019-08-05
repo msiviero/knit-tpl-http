@@ -21,7 +21,8 @@
     "test": "jest --detectOpenHandles",
     "lint": "tslint -c ./tslint.json -p tsconfig.json",
     "clean": "rimraf dist && rimraf bin",
-    "deploy": "npm run-script lint && npm run-script build && npm publish --access public"
+    "deploy": "npm run-script lint && npm run-script build && npm publish --access public",
+    "docker-build": "docker build -t <%= templateName %>:$npm_package_version ."
   },
   "devDependencies": {
     "@types/jest": "^24.0.15",
