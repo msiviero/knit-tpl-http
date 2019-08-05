@@ -16,7 +16,7 @@
     ]
   },
   "scripts": {
-    "build": "npm run-script clean && npm run-script lint && tsc -p ./tsconfig.build.json",
+    "build": "npm run-script test && npm run-script clean && npm run-script lint && tsc -p ./tsconfig.build.json",
     "pkg": "npm run-script build && pkg . --output ./bin/server",
     "test": "jest --detectOpenHandles",
     "lint": "tslint -c ./tslint.json -p tsconfig.json",
