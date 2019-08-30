@@ -2,14 +2,14 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug index",
+            "name": "Debug main",
             "type": "node",
             "request": "launch",
             "sourceMaps": true,
             "cwd": "${workspaceRoot}",
             "protocol": "inspector",
             "args": [
-                "${workspaceRoot}/src/index.ts",
+                "${workspaceRoot}/src/main.ts",
             ],
             "runtimeArgs": [
                 "--nolazy",
@@ -18,7 +18,7 @@
             ],
         },
         {
-            "name": "Debug ts-node",
+            "name": "Debug current",
             "type": "node",
             "request": "launch",
             "sourceMaps": true,
